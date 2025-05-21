@@ -1,0 +1,423 @@
+/*--------------------------------INICIO--------------------------------*/
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: arial, helvetica; 
+    background: #ffffff; 
+    margin: 0; 
+    padding: 0; /* Sin relleno */
+    width: 100%; /* Ancho completo de la pantalla */
+}
+
+/* Estilos del encabezado (header) */
+header {
+    text-align: center; 
+    background: linear-gradient(to right, black, grey, white, grey, black); /* Degradado horizontal */
+    display: flex; /* permite distribuir los elementos hijos de manera flexible dentro del contenedor */
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 15px; 
+    padding: 0; /* Sin relleno */
+    margin: 0; 
+    width: 100%; 
+}
+
+/* MENÚ Inicio / Acerca de nosotros / Modelos / Hazte Socio */
+
+/* Estilo base del menú */
+.MENU {
+    list-style: none; /* elimina las viñetas predeterminadas de las listas (<ul> o <ol>). */
+    padding: 0; /* Sin relleno */
+    background: #000000; 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: auto; 
+    text-align: center; 
+    border-bottom-left-radius: 15px; /* redondean solo las esquinas inferiores izquierda y derecha de un elemento */
+    border-bottom-right-radius: 15px; 
+}
+
+/* Enlaces del menú */
+.MENU li a {
+    text-decoration: none; /* Sin subrayado */
+    color: rgb(255, 255, 255); 
+    padding: 20px; /* Espacio interno */
+    display: block; /* Hace que el enlace ocupe toda el área */
+    text-align: center; 
+}
+
+/* Elementos de lista del menú */
+.MENU li {
+    display: inline-block; /* Muestra elementos en una sola línea */
+}
+
+/* --- */
+.MENU li a:hover {
+    background: #00fff2; /* Fondo cian al pasar el ratón */
+}
+
+/* Espacio entre el menú y el contenido principal */
+main {
+    max-width: 100%; 
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado */
+}
+
+/* Sección destacada: Bienvenido... */
+section.destacado {
+    background: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+/* Botón "Explorar Modelos" */
+.boton {
+    display: inline-block; /*  sin saltos de línea */
+    padding: 10px 20px; 
+    background: #333; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+
+/* ÚLTIMAS NOVEDADES */
+.ultimas-novedades {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 10px 20px; 
+}
+
+/* Título de novedades */
+.ultimas-novedades h2 {
+    text-align: center; 
+    margin-bottom: 5px; 
+    font-size: 40px; 
+}
+
+/* Contenedor de imágenes de modelos */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+/* Cada modelo individual */
+.modelo {
+    background-color: cyan; 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    text-align: left; 
+    width: calc(50% - 10px); 
+}
+
+/* Imágenes de los modelos */
+.modelo img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border: 5px solid cyan; 
+    border-radius: 5px; 
+}
+
+/* Nombre del coche */
+.modelo h3 {
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+    color: black; 
+}
+
+/* Descripción del coche */
+.modelo p {
+    font-size: 0.9em;
+    line-height: 1.6; /* Altura de línea */
+    color: black; 
+}
+
+/* CONTACTO FORMULARIO */
+.formcontact {
+    text-align: center; 
+    padding: 40px 20px; 
+    background-color: #fff; 
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 600px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Título del formulario */
+.formcontact h2 {
+    font-size: 1.8em; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+/* Campos del formulario */
+.formcontact input,
+.formcontact textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 50px; 
+    font-size: 1em; 
+}
+
+/* Botón del formulario */
+.formcontact button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    border-radius: 5px; 
+    cursor: pointer; /* Indicador de clickeable */
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* Hover en botón */
+.formcontact button:hover {
+    background: #0056b3; 
+}
+
+/* UBICACIÓN */
+section.ubicacion {
+    background: #fff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 30px; 
+    text-align: center; 
+}
+section.ubicacion p {
+    font-size: 20px; 
+}
+section.ubicacion a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background: #333; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+
+/*--------------------------ACERCA DE NOSOTROS--------------------------*/
+/* Acerca de nosotros */
+.contenido {
+    max-width: 800px; 
+    margin: 20px auto; 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+.contenido h2 {
+    text-align: center; 
+    color: #333; 
+}
+.contenido p {
+    color: #666; 
+}
+section.nosotros {
+    background: white; 
+    border-radius: 100%; 
+}
+p::first-letter {
+    font-size: 150%; 
+}
+.formulario {
+    justify-content: center; 
+    display: flex; 
+    align-items: center; 
+}▓
+
+/*-------------------------------MODELOS-------------------------------*/
+.socio {
+    text-align: center ; 
+}
+.bajosocio {
+    text-align: center; 
+}
+
+/* COCHES */
+
+/* Contenedor principal de fotos de coches */
+.contenedor_de_fotos {
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px; 
+}
+
+/* Cada fila de coches */
+.fila {
+    display: flex; 
+    gap: 10px; 
+}
+
+/* Cada coche */
+.coche {
+    flex: 1; 
+    border: 2px solid #00fff2; 
+    position: relative; 
+    overflow: hidden; 
+    background-color: #000000; 
+    color: white; 
+    text-decoration: none; 
+}
+
+/* Imagen del coche */
+.coche img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Nombre del coche */
+.coche .nombre {
+    position: absolute; 
+    top: 10px; 
+    left: 0; 
+    right: 0; 
+    background: rgba(255, 255, 255, 0.7); 
+    color: rgb(0, 0, 0); 
+    padding: 15px; 
+    text-align: center;
+}
+
+/* Precio del coche */
+.coche .precio {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 5px; 
+    text-align: center; 
+}
+
+/* Botón del coche */
+.coche button.boton-coche {
+    display: block; 
+    width: 100%; 
+    background-color: white; 
+    color: black; 
+    font-size: 1em; 
+    padding: 10px 0; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align: center; 
+}
+
+/*------------------------COCHES POR SEPARADO------------------------*/
+/* Contenedor principal de detalles del coche */
+.car-details {
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    display: flex; 
+    gap: 20px; /* Espacio entre secciones */
+}
+
+/* Contenedor de imagen del coche */
+.car-image {
+    flex: 1; 
+    position: relative; 
+}
+
+/* Imagen del coche */
+.car-image img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Información del coche */
+.car-info {
+    flex: 1; 
+}
+
+/* Nombre del coche */
+.car-name {
+    font-size: 1.5em; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+/* Descripción del coche */
+.car-description {
+    margin-bottom: 20px; 
+}
+
+/* Precio del coche */
+.car-price {
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    text-align: center; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+}
+
+/*----------------------------HAZTE SOCIO----------------------------*/
+/* Formulario Hazte Socio */
+h1, h2 {
+    font-family: Georgia, serif; 
+}  
+h1 {
+    font-size: 3em; 
+} 
+div {
+    margin: 4.6em auto; 
+} 
+legend {
+    font-size: 1.2em; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    background: white; 
+    border-radius: 10px; 
+}
+fieldset {
+    background: white; 
+    border-radius: 10px; 
+}
+label {
+    font-weight: bold; 
+    display: block; 
+}
+input:focus, select:focus {
+    background-color: rgb(255, 255, 255); /* Blanco al enfocar */
+}
+input:hover, select:hover {
+    background-color: #00fff2; /* Cian al pasar el ratón */
+}
+#boton-crear {
+    font-size: 2em; 
+    padding: 0.5em; 
+    border-radius: 10px; 
+}
+.inline {
+    display: inline; /* Mostrar en línea */
+}
+.centrado {
+    text-align: center; 
+}
+
+/* FOOTER */
+footer {
+    background: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    width: 100%; 
+    border-radius: 0; 
+}
